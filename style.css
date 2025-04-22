@@ -214,18 +214,18 @@ nav a:hover::after {
     cursor: pointer;
 }
 
-.btn-primary {
+.hero-btn {
     background: var(--primary);
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.btn-primary:hover {
+.hero-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
 }
 
-.btn-secondary {
+/* .btn-secondary {
     background: linear-gradient(to right, #ffffff, #e0e0e0);
     color: var(--primary);
 }
@@ -233,7 +233,7 @@ nav a:hover::after {
 .btn-secondary:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
-}
+} */
 
 .hero-shapes {
     position: absolute;
@@ -323,6 +323,30 @@ nav a:hover::after {
     color: #e0e0e0;
 }
 
+.about-content .info-list {
+	list-style: none;
+	margin-left: 0;
+}
+.about-content .info-list li {
+	/* padding: 0 0 1.rem 0; */
+	/* margin-bottom: .6rem; */
+}
+.about-content .info-list li strong {
+	font-family: "poppins-bold", sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	font-size: 1rem;
+	line-height: 3rem;
+}
+.about-content .info-list li span {
+	/* display: block; */
+	font-family: "poppins-regular", sans-serif;
+	color: #888888;
+	font-size: 1rem;
+	line-height: 1;
+}
+
 .about-image {
     flex: 1;
     position: relative;
@@ -331,7 +355,7 @@ nav a:hover::after {
 .profile-img {
     width: 100%;
     max-width: 400px;
-    border-radius: 20px;
+    border-radius: 50%;
     z-index: 2;
     position: relative;
     border: 2px solid rgba(255, 255, 255, 0.1);
