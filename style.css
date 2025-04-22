@@ -371,7 +371,7 @@ nav a:hover::after {
 .skills-horizontal-container.clone {
     position: absolute;
     top: 2rem;
-    left: 190%;
+    left: 184%;
     align-items: center;
 }
 
@@ -418,6 +418,113 @@ nav a:hover::after {
     }
 }
 
+#skill-tools {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; */
+    gap: 2rem;
+    /* padding: 4rem 5%; */
+    width: 100%;
+
+}
+.skill-tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-bars {
+    list-style: none;
+    margin: 4rem 0 3rem;
+    padding: 0;
+}
+
+.skill-bars li {
+    height: .6rem;
+    background: #3a3a3a;
+    width: 90%;
+    margin-bottom: 4rem;
+    padding: 0;
+    position: relative;
+}
+
+.skill-bars li strong {
+    position: absolute;
+    left: 0;
+    top: -2rem;
+    font-family: "Inter", sans-serif;
+    color: #bbbbbb;
+    text-transform: uppercase;
+    /* letter-spacing: .2rem; */
+    font-size: 1rem;
+    line-height: 2.4rem;
+}
+
+.skill-bars li .progress {
+    background: #bbbbbb;
+    position: relative;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.skill-bars li .progress span {
+    position: absolute;
+    left: 0;
+    top: -2.2rem;
+    display: block !important;
+    font-family: "Inter", sans-serif;
+    color: #3a3a3a;
+    font-size: 1.1rem;
+    line-height: 1;
+    background: #313131;
+    padding: .3rem .3rem;
+    border-radius: 3px;
+    z-index: 10;
+    opacity: 1 ;
+    visibility: visible;
+    border: 2px solid red !important;
+
+}
+
+.skill-bars li .progress span::after {
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    margin-left: -5px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid rgba(0, 0, 0, 0.7);
+    content: "";
+}
+
+.skill-bars li .percent5 {width: 5%;}
+.skill-bars li .percent10 {width: 10%;}
+.skill-bars li .percent15 {width: 15%;}
+.skill-bars li .percent20 {width: 20%;}
+.skill-bars li .percent25 {width: 25%;}
+.skill-bars li .percent30 {width: 30%;}
+.skill-bars li .percent35 {width: 35%;}
+.skill-bars li .percent40 {width: 40%;}
+.skill-bars li .percent45 {width: 45%;}
+.skill-bars li .percent50 {width: 50%;}
+.skill-bars li .percent55 {width: 55%;}
+.skill-bars li .percent60 {width: 60%;}
+.skill-bars li .percent65 {width: 65%;}
+.skill-bars li .percent70 {width: 70%;}
+.skill-bars li .percent75 {width: 75%;}
+.skill-bars li .percent80 {width: 80%;}
+.skill-bars li .percent85 {width: 85%;}
+.skill-bars li .percent90 {width: 90%;}
+.skill-bars li .percent95 {width: 95%;}
+.skill-bars li .percent100 {width: 100%;}
+
+
 /* Circular Tools Section */
 .tools-section {
     /* padding: 8rem 10%; */
@@ -458,10 +565,10 @@ nav a:hover::after {
     padding: 0.5rem;
 }
 
-.tool-item.active {
+/* .tool-item.active {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
-}
+} */
 
 .tool-icon {
     font-size: 1.6rem;
@@ -743,6 +850,11 @@ footer p {
         width: 90px;
         height: 90px;
     }
+    .skills-horizontal-container.clone {
+        position: absolute;
+        top: 2rem;
+        left: 260%; 
+    }
 
 
 }
@@ -770,6 +882,7 @@ footer p {
         height: 80px;
         font-size: 0.8rem;
     }
+    
 
 }
 
@@ -841,7 +954,7 @@ footer p {
     .skills-horizontal-container.clone {
         position: absolute;
         top: 2rem;
-        left: 280%; 
+        left: 344%; 
     }
 }
 
@@ -908,7 +1021,7 @@ footer p {
     .skills-horizontal-container.clone {
         position: absolute;
         top: 2rem;
-        left: 450%; 
+        left: 564%; 
     }
 
     .tools-circle-container {
@@ -993,111 +1106,11 @@ footer p {
         min-width: 100px;
         padding: 0.8rem;
     }
+    .skills-horizontal-container.clone {
+        position: absolute;
+        top: 2rem;
+        left: 600%; 
+    }
 }
 
-#skill-tools {
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; */
-    gap: 2rem;
-    /* padding: 4rem 5%; */
-    width: 100%;
-
-}
-.skill-tools-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.skill-bars {
-    list-style: none;
-    margin: 4rem 0 3rem;
-    padding: 0;
-}
-
-.skill-bars li {
-    height: .6rem;
-    background: #3a3a3a;
-    width: 90%;
-    margin-bottom: 4rem;
-    padding: 0;
-    position: relative;
-}
-
-.skill-bars li strong {
-    position: absolute;
-    left: 0;
-    top: -2rem;
-    font-family: "Inter", sans-serif;
-    color: #bbbbbb;
-    text-transform: uppercase;
-    /* letter-spacing: .2rem; */
-    font-size: 1rem;
-    line-height: 2.4rem;
-}
-
-.skill-bars li .progress {
-    background: #bbbbbb;
-    position: relative;
-    height: 100%;
-    border-radius: 3px;
-}
-
-.skill-bars li .progress span {
-    position: absolute;
-    left: 0;
-    top: -2.2rem;
-    display: block !important;
-    font-family: "Inter", sans-serif;
-    color: #3a3a3a;
-    font-size: 1.1rem;
-    line-height: 1;
-    background: #313131;
-    padding: .3rem .3rem;
-    border-radius: 3px;
-    z-index: 10;
-    opacity: 1 ;
-    visibility: visible;
-    border: 2px solid red !important;
-
-}
-
-.skill-bars li .progress span::after {
-    position: absolute;
-    left: 50%;
-    bottom: -5px;
-    margin-left: -5px;
-    border-right: 5px solid transparent;
-    border-left: 5px solid transparent;
-    border-top: 5px solid rgba(0, 0, 0, 0.7);
-    content: "";
-}
-
-.skill-bars li .percent5 {width: 5%;}
-.skill-bars li .percent10 {width: 10%;}
-.skill-bars li .percent15 {width: 15%;}
-.skill-bars li .percent20 {width: 20%;}
-.skill-bars li .percent25 {width: 25%;}
-.skill-bars li .percent30 {width: 30%;}
-.skill-bars li .percent35 {width: 35%;}
-.skill-bars li .percent40 {width: 40%;}
-.skill-bars li .percent45 {width: 45%;}
-.skill-bars li .percent50 {width: 50%;}
-.skill-bars li .percent55 {width: 55%;}
-.skill-bars li .percent60 {width: 60%;}
-.skill-bars li .percent65 {width: 65%;}
-.skill-bars li .percent70 {width: 70%;}
-.skill-bars li .percent75 {width: 75%;}
-.skill-bars li .percent80 {width: 80%;}
-.skill-bars li .percent85 {width: 85%;}
-.skill-bars li .percent90 {width: 90%;}
-.skill-bars li .percent95 {width: 95%;}
-.skill-bars li .percent100 {width: 100%;}
 
